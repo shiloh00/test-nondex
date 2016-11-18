@@ -1,0 +1,189 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.uiuc.simple:simple:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 25, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building simple 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> nondex-maven-plugin:1.1.1:nondex (default-cli) > test-compile @ simple >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ simple ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\dev\Java\simple\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ simple ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ simple ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory D:\dev\Java\simple\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ simple ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex-maven-plugin:1.1.1:nondex (default-cli) < test-compile @ simple <<<
+[INFO] 
+[INFO] --- nondex-maven-plugin:1.1.1:nondex (default-cli) @ simple ---
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=9928532
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=D:\dev\Java\simple\.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_TLJZGzGRn6BvFCDrlekgkuxk7LyPyB1fIb00yYmUBzU=
+test=
+[INFO] Surefire report directory: D:\dev\Java\simple\.nondex\clean_TLJZGzGRn6BvFCDrlekgkuxk7LyPyB1fIb00yYmUBzU=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.uiuc.simple.AppTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=9928532
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=D:\dev\Java\simple\.nondex
+nondexJarDir=D:\dev\Java\simple\.nondex
+nondexExecid=QrM3sxtya3COJDX1izQxrofG2OVZDGbtzxpw1QLdxN0=
+test=
+[INFO] Surefire report directory: D:\dev\Java\simple\.nondex\QrM3sxtya3COJDX1izQxrofG2OVZDGbtzxpw1QLdxN0=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.uiuc.simple.AppTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec <<< FAILURE!
+testGetStringSetList(com.uiuc.simple.AppTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<[1, 3, 2, 4]> but was:<[1, 2, 3, 4]>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.uiuc.simple.AppTest.testGetStringSetList(AppTest.java:53)
+
+
+Results :
+
+Failed tests:   testGetStringSetList(com.uiuc.simple.AppTest): expected:<[1, 3, 2, 4]> but was:<[1, 2, 3, 4]>
+
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0
+
+INFO: Surefire failed when running tests for QrM3sxtya3COJDX1izQxrofG2OVZDGbtzxpw1QLdxN0=
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=9969976
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=D:\dev\Java\simple\.nondex
+nondexJarDir=D:\dev\Java\simple\.nondex
+nondexExecid=pRiTEhpGAxKIb8ogaL7iWfMxQiQjO4v1xRyQk7UUURk=
+test=
+[INFO] Surefire report directory: D:\dev\Java\simple\.nondex\pRiTEhpGAxKIb8ogaL7iWfMxQiQjO4v1xRyQk7UUURk=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.uiuc.simple.AppTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec <<< FAILURE!
+testGetStringSetList(com.uiuc.simple.AppTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<[1, 4, 2, 3]> but was:<[1, 2, 3, 4]>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.uiuc.simple.AppTest.testGetStringSetList(AppTest.java:53)
+
+
+Results :
+
+Failed tests:   testGetStringSetList(com.uiuc.simple.AppTest): expected:<[1, 4, 2, 3]> but was:<[1, 2, 3, 4]>
+
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0
+
+INFO: Surefire failed when running tests for pRiTEhpGAxKIb8ogaL7iWfMxQiQjO4v1xRyQk7UUURk=
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=10011420
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=D:\dev\Java\simple\.nondex
+nondexJarDir=D:\dev\Java\simple\.nondex
+nondexExecid=4DgBv81pLyQLIzpZT8ZDcsywNac+BY7HHsN+9XvOo=
+test=
+[INFO] Surefire report directory: D:\dev\Java\simple\.nondex\4DgBv81pLyQLIzpZT8ZDcsywNac+BY7HHsN+9XvOo=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.uiuc.simple.AppTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec <<< FAILURE!
+testGetStringSetList(com.uiuc.simple.AppTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<[3, 2, 4, 1]> but was:<[1, 2, 3, 4]>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.uiuc.simple.AppTest.testGetStringSetList(AppTest.java:53)
+
+
+Results :
+
+Failed tests:   testGetStringSetList(com.uiuc.simple.AppTest): expected:<[3, 2, 4, 1]> but was:<[1, 2, 3, 4]>
+
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0
+
+INFO: Surefire failed when running tests for 4DgBv81pLyQLIzpZT8ZDcsywNac+BY7HHsN+9XvOo=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=9928532 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="D:\dev\Java\simple\.nondex" -DnondexJarDir="D:\dev\Java\simple\.nondex" -DnondexExecid=QrM3sxtya3COJDX1izQxrofG2OVZDGbtzxpw1QLdxN0=
+[WARNING] com.uiuc.simple.AppTest#testGetStringSetList
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=9969976 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="D:\dev\Java\simple\.nondex" -DnondexJarDir="D:\dev\Java\simple\.nondex" -DnondexExecid=pRiTEhpGAxKIb8ogaL7iWfMxQiQjO4v1xRyQk7UUURk=
+[WARNING] com.uiuc.simple.AppTest#testGetStringSetList
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=10011420 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="D:\dev\Java\simple\.nondex" -DnondexJarDir="D:\dev\Java\simple\.nondex" -DnondexExecid=4DgBv81pLyQLIzpZT8ZDcsywNac+BY7HHsN+9XvOo=
+[WARNING] com.uiuc.simple.AppTest#testGetStringSetList
+[INFO] *********
+[INFO] Across all seeds:
+[INFO] com.uiuc.simple.AppTest#testGetStringSetList
+[INFO] Test results can be found at: 
+[INFO] file://D:\dev\Java\simple\.nondex\QrM3sxtya3COJDX1izQxrofG2OVZDGbtzxpw1QLdxN0=\test_results.html
+[INFO] [NonDex] The id of this run is: QrM3sxtya3COJDX1izQxrofG2OVZDGbtzxpw1QLdxN0=
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.190 s
+[INFO] Finished at: 2016-09-05T17:52:19-07:00
+[INFO] Final Memory: 11M/232M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.illinois:nondex-maven-plugin:1.1.1:nondex (default-cli) on project simple: Unable to execute mojo: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\dev\Java\simple\.nondex\QrM3sxtya3COJDX1izQxrofG2OVZDGbtzxpw1QLdxN0= for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
